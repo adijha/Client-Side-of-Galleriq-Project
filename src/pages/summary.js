@@ -14,14 +14,14 @@ export default function Checkout() {
     image: getCart().image,
     quantity: getCart().quantity,
     phone: getCart().number,
-    user_id: '98929',
+    user_id: '101',
     // redirect_url: `http://localhost:8001/bid/callback?user_id=${user.id}`,
-    redirect_url: `${API}/bid/callback`,
+    redirect_url: `${API}/bid/callback?user_id=101`,
     webhook_url: '/webhook/'
   };
 
   const createPost = (order) => {
-    console.log("createpost starts")
+    console.log('createpost starts');
     return fetch(`${API}/bid/pay`, {
       method: 'POST',
       Accept: 'application/json',
