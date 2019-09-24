@@ -8,7 +8,7 @@ export default function Offers() {
       <div className='row' style={ { marginBottom: '0px',paddingBottom: '0px'}}>
         <div
           className=' col-sm-6 col-md-3 pro'
-          style={{ textAlign: 'left', padding: '0.3rem' , marginLeft:'-5.6rem'}}>
+          style={{ textAlign: 'center', padding: '0.3rem' }}>
           <span className='left-top' style={ {fontSize: '14px'}}>Sign up &amp; get gift voucher worth `1000</span>
         </div>
         <div className=' col-md-6'></div>

@@ -7303,9 +7303,9 @@ button.close {
 
 /*canvas*/
 .canvas {
-  background-image: url('images/canvas.png');
+  background-image: url('../src/images/Layer 18.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: centre/cover;
 }
 .canvas-heading {
   margin-top: 89px;
