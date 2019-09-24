@@ -5,7 +5,7 @@ import account from '../images/acoount.png';
 export default function Offers() {
   return (
     <Fragment>
-      <div className='row ' style={ { margin: '0px', backgroundColor: '#3399DD'}}>
+      <div className='row ' style={ { margin: '0px'}}>
         <div
           className='col-sm-6 col-md-3 pro'
           style={{ textAlign: 'center', padding: '0.7rem' }}>

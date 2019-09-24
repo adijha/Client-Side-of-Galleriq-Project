@@ -13,7 +13,8 @@ import mail from '../images/mail.png';
 export default function Footer() {
   return (
     <Fragment>
-    
+      <hr style={ {   border: "1px solid gray"
+       , borderRadius: "2px"} }/>
     <div className="row footer">
       <div className="col-sm-1" />
       <div className="col-sm-2">
@@ -79,10 +80,10 @@ export default function Footer() {
           
       <div className="col-sm-1" />
     </div>
-    <div className="row">
-      <div className="col-sm-2" />
-      <div className="col-sm-8" style={{ background: "#424242" }}>
-        <div style={{ float: "left", color: "#fff" }}>
+    <div className="row"  style={{marginTop: '2rem' }}>
+      <div className="col-sm-2 " style={{bottom: '0' }}/>
+      <div className="col-sm-12" style={{ background: "#424242" , bottom: '0' }}>
+        <div style={{  color: "#fff", textAlign: 'center' , bottom: '0' }}>
           Copyright ©2019 Galleriq. All rights reserved.
         </div>
       </div>

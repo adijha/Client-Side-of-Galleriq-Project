@@ -54,6 +54,20 @@ const Cart = () => {
             type='text'
             name='address'
             id='address'
+            placeholder='Address line 1'
+            class='list-group-item'
+            style={{ width: '100%' }}></input>
+          <input
+            type='text'
+            name='address1'
+            id='address1'
+            placeholder='Address line 1'
+            class='list-group-item'
+            style={{ width: '100%' }}></input>
+          <input
+            type='text'
+            name='address2'
+            id='address2'
             placeholder='Delivery Address'
             class='list-group-item'
             style={{ width: '100%' }}></input>
@@ -66,7 +80,7 @@ const Cart = () => {
           className='btn offset-btn  btn-primary btn-2 col-md-4'
           type='submit'
           style={{ width: '25%', marginTop: '-3rem', marginLeft: '40rem' }}>
-          checkout
+          Checkout
         </button>
       </Link>
     </Fragment>
