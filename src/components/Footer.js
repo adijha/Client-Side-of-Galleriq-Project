@@ -18,7 +18,7 @@ export default function Footer() {
     <div className="row footer">
       <div className="col-sm-1" />
       <div className="col-sm-2">
-        <h4>COMPANY</h4>
+        <h4 style={{fontWeight:'700'}} >COMPANY</h4>
         <ul>
           <li>
             <a href="#">Privacy Policy</a>
@@ -46,7 +46,7 @@ export default function Footer() {
         </ul>
       </div>
       <div className="col-sm-2">
-        <h4 style={{}}>BE SOCIAL</h4>
+        <h4 style={{fontWeight:'700'}}>BE SOCIAL</h4>
         <ul>
           <li>
             <div style={{ display: "flex" }}>

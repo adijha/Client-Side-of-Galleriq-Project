@@ -63,7 +63,7 @@ export default function Checkout() {
               <button
                 className='btn btn-outline-primary btn-large btn-2'
                 style={{ width: '50%', margin: '0 9rem' }}>
-                Create Payment
+                Proceed to payment
               </button>
             </Link>
           </form>

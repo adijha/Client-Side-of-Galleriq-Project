@@ -4,7 +4,7 @@ export default function NewsLetter() {
   return (
     <div className="col-sm-4" >
     <form action style={{ background: "#ff9900", height: "250px"  , padding: '3rem'}}>
-      <h3 style={{ color: "#fff", letterSpacing:'1.5px' }}>STAY IN TOUCH WITH GALLERIQ</h3>
+      <h3 style={{fontSize:'20px', color: "#fff", letterSpacing:'1.5px' }}>STAY IN TOUCH WITH GALLERIQ</h3>
         <input
         style={{  marginTop: '2rem',color: 'white', letterSpacing:'1.4px', fontSize:'13px' }}
         type="text"
