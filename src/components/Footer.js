@@ -18,7 +18,7 @@ export default function Footer() {
     <div className="row footer">
       <div className="col-sm-1" />
       <div className="col-sm-2">
-        <h4>Company</h4>
+        <h4>COMPANY</h4>
         <ul>
           <li>
             <a href="#">Privacy Policy</a>
@@ -46,7 +46,7 @@ export default function Footer() {
         </ul>
       </div>
       <div className="col-sm-2">
-        <h4>Be Social</h4>
+        <h4 style={{}}>BE SOCIAL</h4>
         <ul>
           <li>
             <div style={{ display: "flex" }}>
@@ -80,7 +80,7 @@ export default function Footer() {
           
       <div className="col-sm-1" />
     </div>
-    <div className="row"  style={{marginTop: '2rem' }}>
+    <div className="row"  style={{margin: '0rem 3rem' }}>
       <div className="col-sm-2 " style={{bottom: '0' }}/>
       <div className="col-sm-12" style={{ background: "#424242" , bottom: '0' }}>
         <div style={{  color: "#fff", textAlign: 'center' , bottom: '0' }}>

@@ -58,7 +58,7 @@ export default function home() {
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               </div>
             </div>
-            <div className="row" style={{padding: '20px 40px'}}>
+            <div className="container" style={{padding: '20px 40px', margin:'2rem 11rem'}}>
               <div className=" col-md-4  col-xs-12">
                 <div className="hovereffect">
                   <img className="img-responsive" src={require('../images/sub-1.png')} alt="" />
@@ -97,7 +97,7 @@ export default function home() {
               </div>
             </div>
             <div>
-              <h3 className="center">shop by collection</h3>
+              <h3 className="center " style={{  }} >SHOP BY COLLECTION</h3>
             </div>
             <div className="row">
               <div className="col-sm-6">

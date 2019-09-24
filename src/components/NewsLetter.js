@@ -3,15 +3,16 @@ import React from 'react'
 export default function NewsLetter() {
   return (
     <div className="col-sm-4" >
-    <form action style={{ background: "#ff9900", height: "170px"  , padding: '1rem'}}>
-      <h3 style={{ color: "#fff" }}>STAY IN TOUCH WITH GALLERIQ</h3>
-      <input
+    <form action style={{ background: "#ff9900", height: "250px"  , padding: '3rem'}}>
+      <h3 style={{ color: "#fff", letterSpacing:'1.5px' }}>STAY IN TOUCH WITH GALLERIQ</h3>
+        <input
+        style={{  marginTop: '2rem',color: 'white', letterSpacing:'1.4px', fontSize:'13px' }}
         type="text"
         className="subscribe-input"
         placeholder="Enter Email Address"
-        style={{ marginTop: '1rem'}}
+        
       />
-      <button type="submit" className="btn btn-default subscribe" style={{ marginTop: '2rem'}}>
+      <button type="submit" className="btn btn-default subscribe" style={{ marginTop: '4rem'}}>
         SUBSCRIBE
       </button>
     </form>

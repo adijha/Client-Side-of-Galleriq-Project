@@ -1,26 +1,28 @@
-.main{
+.main {
   margin: 50px;
   background-color: #d75d77;
-  border: 5px solid pink; 
+  border: 5px solid pink;
 }
 
-.nav-bar{
+.nav-bar {
   word-spacing: 40px;
-  font-size: 20px;
+  font-size: 18px;
   font-family: arial;
 }
 
-.nav-bar ul li a{
+.nav-bar ul li link {
   text-decoration: none;
   color: white;
 }
 
-.nav-bar ul li{
+.nav-bar ul li {
   display: inline-block;
-  -webkit-transition: border 1s, border-radius 1s, padding 1s, background-color 1s, color 1s;
+  padding: 1rem !important;
+  -webkit-transition: border 1s, border-radius 1s, padding 1s, background-color 1s,
+    color 1s;
 }
 
-.nav-bar ul li:hover{
+.nav-bar ul li:hover {
   border-bottom: 2px solid gray;
   border-radius: 10%;
   padding: 10px;
