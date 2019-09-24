@@ -1,5 +1,6 @@
 import React, { useState, Fragment } from 'react';
 import { API } from '../config';
+import { Link } from 'react-router-dom';
 import { getCart } from './cartHelpers';
 
 export default function Checkout() {
@@ -58,11 +59,13 @@ export default function Checkout() {
                 <li class='list-group-item'> Address :&nbsp; {getCart().address}</li>
               </ul>
             </div>
-            <button
-              className='btn btn-outline-primary btn-large btn-2'
-              style={{ width: '50%', margin: '0 9rem' }}>
-              Create Payment
-            </button>
+            <Link to='/payment-Complete'>
+              <button
+                className='btn btn-outline-primary btn-large btn-2'
+                style={{ width: '50%', margin: '0 9rem' }}>
+                Create Payment
+              </button>
+            </Link>
           </form>
         </div>
       </div>
