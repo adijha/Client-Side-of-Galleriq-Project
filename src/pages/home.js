@@ -97,31 +97,31 @@ export default function home() {
               </div>
             </div>
             <div>
-              <h3 className="center " style={{  }} >SHOP BY COLLECTION</h3>
+              <h3 className="center " style={{ fontWeight:'700' }} >SHOP BY COLLECTION</h3>
             </div>
             <div className="row">
               <div className="col-sm-6">
-                <img className="banner-img" src={require('../images/banner-image-1.png')} alt="" />
+                <img className="banner-img1" src={require('../images/banner-image-1.png')} alt="" />
                 <h4 className="center">Single Canvas Print</h4>
               </div>
               <div className="col-sm-6">
-                <img className="banner-img" src={require('../images/banner-image-2.png')}alt="" />
+                <img className="banner-img2" src={require('../images/banner-image-2.png')}alt="" />
                 <h4 className="center">Canvas Collages</h4>
               </div>
               <div className="col-sm-12">
-                <img className="banner-img" src={require('../images/banner-image-3.png')} alt="" />
-                <h4 className="center">Canvas Split Image</h4>
+                <img className="banner-img3" src={require('../images/banner-image-3.png')} alt="" />
+                <h4 className="center" style={{ fontWeight:'700' }}>CANVAS SPLIT IMAGE</h4>
               </div>
               <div className="col-sm-6">
-                <img className="banner-img" src={require('../images/banner-image-4.png')}alt="" />
+                <img className="banner-img1" src={require('../images/banner-image-4.png')}alt="" />
                 <h4 className="center">Floating Frame Canvas</h4>
               </div>
               <div className="col-sm-6">
-                <img className="banner-img" src={require('../images/banner-image-5.png')} alt="" />
+                <img className="banner-img2" src={require('../images/banner-image-5.png')} alt="" />
                 <h4 className="center">Large Canvas Print</h4>
               </div>
               <div className="col-sm-12">
-                <img className="banner-img" src={require('../images/banner-image-6.png')} alt="" />
+                <img className="banner-img3" src={require('../images/Clip.png')} alt="" />
                 <h4 className="center">Acrylic Premium Prints</h4>
               </div>
             </div>
@@ -132,7 +132,7 @@ export default function home() {
                   <div className="item carousel-item active">
                     <div className="img-box"><img src={require('../images/testimonial.png')} alt="" /></div>
                     <p className="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-                    <p className="overview"><b>Michael Holz</b>Seo Analyst at <a href="#">OsCorp Tech.</a></p>
+                    <p className="overview"><b>Michael Holz</b></p>
                     <div className="star-rating">
                       <ul className="list-inline">
                         <li className="list-inline-item"><i className="fa fa-star" /></li>
@@ -146,7 +146,7 @@ export default function home() {
                   <div className="item carousel-item">
                     <div className="img-box"><img src={require('../images/testimonial.png')} alt="" /></div>
                     <p className="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Vestibulum idac nisl bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
-                    <p className="overview"><b>Paula Wilson</b>Media Analyst at <a href="#">SkyNet Inc.</a></p>
+                    <p className="overview"><b>Paula Wilson</b></p>
                     <div className="star-rating">
                       <ul className="list-inline">
                         <li className="list-inline-item"><i className="fa fa-star" /></li>
@@ -160,7 +160,7 @@ export default function home() {
                   <div className="item carousel-item">
               <div className="img-box"><img src={ require('../images/testimonial.png') } alt="" /></div>
                     <p className="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio. Phasellus auctor velit.</p>
-                    <p className="overview"><b>Antonio Moreno</b>Web Developer at <a href="#">Circle Ltd.</a></p>
+                    <p className="overview"><b>Antonio Moreno</b></p>
                     <div className="star-rating">
                       <ul className="list-inline">
                         <li className="list-inline-item"><i className="fa fa-star" /></li>
@@ -173,13 +173,46 @@ export default function home() {
                   </div>		
                 </div>
               </div>
+      </div>
+      
+
+
+
+           
+            <div className="row" style={{ paddingBottom: 50 }}>
+            <div className="col-sm-8">
+            <img className="banner-img" src={require('../images/bottom-banner.png')} alt="" />
             </div>
-            <div className="row" style={{paddingBottom: '50px'}}>
-              <div className="col-sm-12">
-                <img className="banner-img" src={require('../images/bottom-banner.png')} alt="" />
+            <div className="col-sm-4">
+              <div className="bottom-banner-right">
+                <div className="right-inner">
+                  <h2>
+                    LATEST <strong>NEWS</strong> FROM THE <br />
+                    GALLERIQ <strong>BLOG</strong>
+                  </h2>
+                  <hr />
+                  <p>11 Mar’19:</p>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                    eiusmod tempor ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud. Excepteur sint.
+                  </p>
+                  <a href="#" className="btn">
+                    Read More
+                  </a>
+                </div>
               </div>
             </div>
-            <div className="row">
+          </div>;
+          
+      
+      
+      
+      
+      
+      
+      
+      <div className="row">
               <div className="col-sm-12 center">
                 <img src={require('../images/Instagram_icon@1X.png')} alt="" />
                 <h2>Galleriq on instagram</h2>
