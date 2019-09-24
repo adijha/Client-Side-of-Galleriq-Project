@@ -14,6 +14,7 @@ import Login from './pages/Login';
 import create from './pages/create';
 import register from './pages/register';
 import checkout from './pages/checkout';
+import summary from './pages/summary';
 import PaymentComplete from './pages/PaymentComplete';
 
 import About from './pages/about';
@@ -38,6 +39,7 @@ function App() {
         <Route exact path='/create' component={create} />
         <Route exact path='/register' component={register} />
         <Route exact path='/checkout' component={checkout} />
+        <Route exact path='/summary' component={summary} />
         <Route exact path='/payment-complete' component={PaymentComplete} />
       </div>
       <Footer />

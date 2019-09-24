@@ -670,3 +670,14 @@ input ::placeholder {
 .pm{
   margin : 5%;
 }
+
+.offset{
+  margin: 4% 15%;
+}
+
+.offset-btn{
+  margin: 4% 32%;
+  padding: 2% 3%;
+  font-size: 16px;
+  /* letter-spacing: 2px; */
+}

@@ -6,7 +6,7 @@ const Item = ({ frame = '', price = '', image = '' }) => {
   const [quantity, setQuantity] = useState('1');
 
   const handleChange = (event) => {
-    setQuantity(event.target.value < 1 ? 1 : event.target.value);
+    setQuantity(event.target.value);
   };
 
   return (
@@ -23,7 +23,9 @@ const Item = ({ frame = '', price = '', image = '' }) => {
           </div>
           <div className='col-md-5'>
             <div className='row-md-6'>
-              <h3 style={{ marginLeft: '5rem', fontSize: '18px' }}>{frame}</h3>
+              <h3 style={{ marginLeft: '5rem', fontSize: '18px', fontWeight: 'bold' }}>
+                {frame}
+              </h3>
             </div>
 
             <div>

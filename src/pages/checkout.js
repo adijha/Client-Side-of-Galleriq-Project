@@ -1,66 +1,76 @@
-import React, { useState, Fragment } from 'react';
-import { API } from '../config';
-import { getCart } from './cartHelpers';
+import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 
-export default function Checkout() {
-  const data = {
-    purpose: 'GalleriQ Payment',
-    amount: getCart().price,
-    buyer_name: getCart().name,
-    email: 'user@email.com',
-    phone: getCart().number,
-    user_id: '98929',
-    // redirect_url: `http://localhost:8001/bid/callback?user_id=${user.id}`,
-    redirect_url: `${API}/bid/callback`,
-    webhook_url: '/webhook/'
-  };
+const updateCart = () => {
+  const name = document.querySelector('#name').value;
+  const number = document.querySelector('#number').value;
+  const address = document.querySelector('#address').value;
+  const email = document.querySelector('#email').value;
 
-  const createPost = (user) => {
-    return fetch(`${API}/bid/pay`, {
-      method: 'POST',
-      Accept: 'application/json',
-      'Content-Type': 'application/json',
-      body: JSON.stringify(user)
-    })
-      .then((res) => res.text())
-      .then((text) => (window.location.href = text))
-      .catch((err) => {
-        console.log(err);
-      });
-  };
+  var existing = localStorage.getItem('cart');
 
-  const clickSubmit = (e) => {
-    e.preventDefault();
-    // console.log('getcart-->', getCart());
+  existing = existing ? JSON.parse(existing) : {};
 
-    createPost(data);
-  };
+  existing['name'] = name;
+  existing['number'] = number;
+  existing['address'] = address;
+  existing['email'] = email;
 
-  const newCategoryFom = () => (
-    <div className='container'>
-      <div className='row'>
-        <div className='col-md-2'>
-          <img src={getCart().image} alt='' className='img' />
+  localStorage.setItem('cart', JSON.stringify(existing));
+};
+
+const Cart = () => {
+  return (
+    <Fragment>
+      <div class='card mx-auto' style={{ maxWidth: '60rem' }}>
+        <div class='card-header'>
+          <center>
+            <h1>Checkout Details</h1>
+          </center>
         </div>
-        <div className=' col-md-5 pm'>
-          <form onSubmit={clickSubmit}>
-            <div className='form-group'>
-              <h1 className='center'>Payment Summary</h1>
-              <ul class='list-group'>
-                <li class='list-group-item'> Frame :&nbsp; {getCart().frame} </li>
-                <li class='list-group-item'> Quantity :&nbsp; {getCart().quantity}</li>
-                <li class='list-group-item '> Name :&nbsp; {getCart().name}</li>
-                <li class='list-group-item '> Number :&nbsp; {getCart().number}</li>
-                <li class='list-group-item'> Price :&nbsp; {getCart().price}</li>
-                <li class='list-group-item'> Address :&nbsp; {getCart().address}</li>
-              </ul>
-            </div>
-            <button className='btn btn-outline-primary btn-large'>Create Payment</button>
-          </form>
-        </div>
+        <ul class='list-group list-group-flush'>
+          <input
+            type='text'
+            name='name'
+            id='name'
+            placeholder='Name'
+            class='list-group-item'
+            style={{ width: '100%' }}></input>
+          <input
+            type='email'
+            name='email'
+            id='email'
+            placeholder='Email'
+            class='list-group-item'
+            style={{ width: '100%' }}></input>
+          <input
+            type='text'
+            name='number'
+            id='number'
+            placeholder='Number'
+            class='list-group-item'
+            style={{ width: '100%' }}></input>
+          <input
+            type='text'
+            name='address'
+            id='address'
+            placeholder='Delivery Address'
+            class='list-group-item'
+            style={{ width: '100%' }}></input>
+        </ul>
       </div>
-    </div>
-  );
 
-  return <Fragment>{newCategoryFom()}</Fragment>;
-}
+      <Link to='summary'>
+        <button
+          onClick={updateCart}
+          className='btn offset-btn  btn-primary btn-2 col-md-4'
+          type='submit'
+          style={{ width: '25%', marginTop: '-3rem', marginLeft: '40rem' }}>
+          checkout
+        </button>
+      </Link>
+    </Fragment>
+  );
+};
+
+export default Cart;

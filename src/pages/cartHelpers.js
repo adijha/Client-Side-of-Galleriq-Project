@@ -23,24 +23,23 @@ export const itemTotal = () => {
   return 0;
 };
 
-export const saveOrder = (cart) => {
-  console.log('cart-->', cart);
-  return fetch(`${API}/order`, {
-    method: 'POST',
-    headers: {
-      Accept: 'application/json',
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(cart)
-  })
-    .then((response) => {
-      return response.json();
-    })
-    .catch((err) => {
-      console.log(err);
-    });
-  // return console.log('api--->', cart);
-};
+// export const saveOrder = (cart) => {
+//   console.log('cart-->', cart);
+//   return fetch(`${API}/order`, {
+//     method: 'POST',
+//     headers: {
+//       Accept: 'application/json',
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify(cart)
+//   })
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .catch((err) => {
+//       console.log(err);
+//     });
+// };
 
 
 export const getSizeList = () => {
