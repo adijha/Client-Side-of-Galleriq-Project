@@ -13,15 +13,15 @@ import mail from '../images/mail.png';
 export default function Footer() {
   return (
     <Fragment>
-      <hr style={ {   border: "1px solid gray"
-       , borderRadius: "2px"} }/>
+      <hr style={ {   border: '0.3px solid #999999'
+     } }/>
     <div className="row footer">
       <div className="col-sm-1" />
       <div className="col-sm-2">
-        <h4 style={{fontWeight:'700'}} >COMPANY</h4>
-        <ul>
+        <h4 style={{fontWeight:'700', letterSpacing:'1.5px'}} >COMPANY</h4>
+        <ul style={{letterSpacing:'1.5px'}}>
           <li>
-            <a href="#">Privacy Policy</a>
+            <a href="#">PRIVACY POLICY</a>
           </li>
           <li>
             <a href="#">CONTACT &amp; HELP</a>
@@ -32,8 +32,8 @@ export default function Footer() {
         </ul>
       </div>
       <div className="col-sm-2">
-        <h4 style={{ color: "#fff" }}>Important</h4>
-        <ul>
+        <h4 style={{ color: "#fff" }}>IMPORTANT</h4>
+        <ul style={{letterSpacing:'1.5px'}}>
           <li>
             <a href="#">SHIPPING INFO</a>
           </li>
@@ -41,15 +41,15 @@ export default function Footer() {
             <a href="#">RETURN POLICY</a>
           </li>
           <li>
-            <Link to='/create'>Admin</Link>
+            <Link to='/create'>ADMIN</Link>
           </li>
         </ul>
       </div>
       <div className="col-sm-2">
-        <h4 style={{fontWeight:'700'}}>BE SOCIAL</h4>
+        <h4 style={{fontWeight:'700',letterSpacing:'1.5px'}}>BE SOCIAL</h4>
         <ul>
           <li>
-            <div style={{ display: "flex" }}>
+            <div style={{ display: "flex" ,}}>
               <div style={{ paddingRight: 30 }}>
                 <img src={facebook} alt />
               </div>

@@ -529,6 +529,12 @@ th {
   content: "\e078"
 }
 .glyphicon-chevron-left:before {
+  content: "\e079";
+}
+.glyphicon-chevron-left::before {
+  content: "";
+}
+.glyphicon-chevron-left:before {
   content: "\e079"
 }
 .glyphicon-chevron-right:before {
@@ -1114,6 +1120,7 @@ figure {
 img {
   vertical-align: middle
 }
+
 .carousel-inner > .item > a > img,
 .carousel-inner > .item > img,
 .img-responsive,
@@ -6309,6 +6316,15 @@ button.close {
 .popover-content {
   padding: 9px 14px
 }
+
+
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
 .carousel {
   position: relative
 }
@@ -6535,6 +6551,15 @@ button.close {
       bottom: 20px
   }
 }
+
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////////////////////////// */
+/* ////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
 .btn-group-vertical > .btn-group:after,
 .btn-group-vertical > .btn-group:before,
 .btn-toolbar:after,
@@ -7311,123 +7336,95 @@ button.close {
   border-radius: 50%;
 }
 
-/*canvas*/
-.canvas {
-  background-image: url('../src/images/Layer 18.png');
-  background-repeat: no-repeat;
-  background-size: centre/cover;
-}
-.canvas-heading {
-  margin-top: 89px;
-  margin-left: 169px;
-}
-.canvas-paragaraph {
-  font-size: 13px;
-  margin-left: 169px;
-}
-.banner-img {
-  width: 100%;
-}
 
-@media (max-width: 767px) {
-  .canvas-heading {
-    margin-top: 89px;
-    margin-left: 0px;
-  }
-  .canvas-paragaraph {
-    margin-top: 0px;
-    margin-left: 0px;
-  }
-}
-
-.carousel1 {
-  width: 650px;
-  margin: 0 auto;
-  padding-bottom: 50px;
+.carousel1  {
+	width: 650px;
+	margin: 0 auto;
+	padding-bottom: 50px;
 }
 .carousel1 .item {
-  color: #999;
-  font-size: 14px;
-  text-align: center;
-  overflow: hidden;
-  min-height: 340px;
+	color: #999;
+	font-size: 14px;
+    text-align: center;
+	overflow: hidden;
+    min-height: 340px;
 }
 .carousel1 .item a {
-  color: #eb7245;
+	color: #eb7245;
 }
 .carousel1 .img-box {
-  width: 145px;
-  height: 145px;
-  margin: 0 auto;
-  border-radius: 50%;
+	width: 145px;
+	height: 145px;
+	margin: 0 auto;
+	border-radius: 50%;
 }
 .carousel1 .img-box img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  border-radius: 50%;
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
 }
-.carousel1 .testimonial {
-  padding: 30px 0 10px;
+.carousel1 .testimonial {	
+	padding: 30px 0 10px;
 }
-.carousel1 .overview {
-  text-align: center;
-  padding-bottom: 5px;
+.carousel1 .overview {	
+	text-align: center;
+	padding-bottom: 5px;
 }
 .carousel1 .overview b {
-  color: #333;
-  font-size: 15px;
-  text-transform: uppercase;
-  display: block;
-  padding-bottom: 5px;
+	color: #333;
+	font-size: 15px;
+	text-transform: uppercase;
+	display: block;	
+	padding-bottom: 5px;
 }
 .carousel1 .star-rating i {
-  font-size: 18px;
-  color: #ffdc12;
+	font-size: 18px;
+	color: #ffdc12;
 }
 .carousel1 .carousel-control {
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background: #999;
-  text-shadow: none;
-  top: 4px;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+    background: #999;
+    text-shadow: none;
+	top: 4px;
 }
 .carousel1 .carousel-control i {
-  font-size: 20px;
-  margin-right: 2px;
+	font-size: 20px;
+	margin-right: 2px;
 }
 .carousel1 .carousel-control.left {
-  left: auto;
-  right: 40px;
+	left: auto;
+	right: 40px;
 }
 .carousel1 .carousel-control.right i {
-  margin-right: -2px;
+	margin-right: -2px;
 }
 .carousel1 .carousel-indicators {
-  bottom: 15px;
+	bottom: 15px;
 }
-.carousel-indicators li,
-.carousel-indicators li.active {
-  width: 11px;
-  height: 11px;
-  margin: 1px 5px;
-  border-radius: 50%;
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 11px;
+	height: 11px;
+	margin: 1px 5px;
+	border-radius: 50%;
 }
-.carousel1 .carousel-indicators li {
-  background: #e2e2e2;
-  border-color: transparent;
+.carousel1 .carousel-indicators li {	
+	background: #e2e2e2;
+	border-color: transparent;
 }
 .carousel1 .carousel-indicators li.active {
-  border: none;
-  background: #888;
+	border: none;
+	background: #888;		
 }
-@media (max-width: 767px) {
-  .carousel1 {
+@media(max-width: 767px)
+{
+	.carousel1 {
     width: auto;
     margin: 0 10px;
     padding-bottom: 30px;
-  }
+	}
 }
 
 /*footer*/
@@ -7979,6 +7976,47 @@ input ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
 /* ////////////////// */
 /* ////////////////// */
 /* ////////////////// */
+
+
+
+/*canvas*/
+.canvas{
+	background-image:  url("../src/images/canvas.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+@media(min-width:1200px)
+{.canvas-inner{margin: 70px 0px;}
+    .canvas-left{padding-right:0px;}
+.canvas-right{padding-left:0px;}
+
+}
+.canvas-heading{
+	/*margin-top: 89px;*/
+	margin-left: 169px;
+}
+.canvas-paragaraph{
+	font-size: 13px;
+	margin-left: 169px;
+}
+.banner-img
+{
+	width: 100%;
+	padding:10px 20px;
+}
+
+@media (max-width: 767px) {
+	.canvas-heading {
+	margin-top: 89px;
+	margin-left: 0px;
+}
+	.canvas-paragaraph{
+	margin-top: 0px;
+	margin-left: 0px;
+}
+}
+
+
 /* ////////////////// */
 /* ////////////////// */
 /* ////////////////// */

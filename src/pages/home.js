@@ -5,33 +5,29 @@ import CreateYourPrint from '../components/CreateYourPrint';
 export default function home() {
   return (
     <Fragment>
-            <div id="myCarousel" className="carousel slide" data-ride="carousel">
-              <ol className="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to={0} className="active" />
-                <li data-target="#myCarousel" data-slide-to={1} />
-                <li data-target="#myCarousel" data-slide-to={2} />
-              </ol>
-              <div className="carousel-inner">
-                <div className="item active">
-                  <img src={require('../images/banner1.png')} alt="Los Angeles" />
-                </div>
-                <div className="item">
-                  <img src={require('../images/banner1.png')} alt="Chicago" />
-                </div>
-                <div className="item">
-                  <img src={require('../images/banner1.png')} alt="New York" />
-                </div>
-              </div>
-              <a className="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span className="glyphicon glyphicon-chevron-left" />
-                <span className="sr-only">Previous</span>
-              </a>
-              <a className="right carousel-control" href="#myCarousel" data-slide="next">
-                <span className="glyphicon glyphicon-chevron-right" />
-                <span className="sr-only">Next</span>
-              </a>
-            </div>
-            <div className="row" style={{padding: '20px 0', backgroundColor: '#EFEFEF'}}>
+    <div id="myCarousel" className="carousel slide" data-ride="carousel">
+    <ol className="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to={0} className="active" />
+      <li data-target="#myCarousel" data-slide-to={1} />
+      <li data-target="#myCarousel" data-slide-to={2} />
+    </ol>
+    <div className="carousel-inner">
+      <div className="item active">
+        <img src={require('../images/banner1.png')} alt="Los Angeles" />
+      </div>
+      <div className="item">
+        <img src={require('../images/banner1.png')} alt="Chicago" />
+      </div>
+      <div className="item">
+        <img src={require('../images/banner1.png')}  alt="New York" />
+      </div>
+    </div>
+    <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+    </a>
+    <a className="right carousel-control" href="#myCarousel" data-slide="next">
+    </a>
+  </div>
+              <div className="row" style={{padding: '20px 0', backgroundColor: '#EFEFEF'}}>
               <div className="col-sm-2" />
               <div className="col-sm-2  second-sec"> 
                 <img src={require('../images/shipping.png')} alt="" />
@@ -58,7 +54,7 @@ export default function home() {
                   Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
               </div>
             </div>
-            <div className="container" style={{padding: '20px 40px', margin:'2rem 11rem'}}>
+            <div className="container" style={{padding: '20px 40px'}}>
               <div className=" col-md-4  col-xs-12">
                 <div className="hovereffect">
                   <img className="img-responsive" src={require('../images/sub-1.png')} alt="" />
@@ -88,40 +84,55 @@ export default function home() {
               </div>
             </div>
             <div className="row canvas">
-              <div className="col-sm-8">
-                <h1 className="canvas-heading">Create<br />your own<br />Canvas</h1>
-                <p className="canvas-paragaraph"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem <br />Ipsum has been the industry's standard dummy text ever since the 1500s,</p>
-                <p className="canvas-paragaraph"><a href="#" className="btn btn-warning" role="button">Get Started Now</a></p>
-              </div>
-              <div className="col-sm-4">
-              </div>
+            <div className="col-sm-8 canvas-inner">
+              <h1 className="canvas-heading">
+                Create
+                <br />
+                your own
+                <br />
+                Canvas
+              </h1>
+              <p className="canvas-paragaraph">
+              
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem <br />
+                Ipsum has been the industry's standard dummy text ever since the 1500s,
+              </p>
+              <p className="canvas-paragaraph">
+                <a href="#" className="btn btn-warning" role="button">
+                  Get Started Now
+                </a>
+              </p>
             </div>
+            <div className="col-sm-4"></div>
+          </div>;
+          
             <div>
               <h3 className="center " style={{ fontWeight:'700' }} >SHOP BY COLLECTION</h3>
             </div>
             <div className="row">
               <div className="col-sm-6">
-                <img className="banner-img1" src={require('../images/banner-image-1.png')} alt="" />
+                <img className="banner-img" src={require('../images/banner-image-1.png')} alt="" />
                 <h4 className="center">Single Canvas Print</h4>
               </div>
               <div className="col-sm-6">
-                <img className="banner-img2" src={require('../images/banner-image-2.png')}alt="" />
+          <img className="banner-img" src={ require('../images/banner-image-2.png')} alt="" />
                 <h4 className="center">Canvas Collages</h4>
               </div>
               <div className="col-sm-12">
-                <img className="banner-img3" src={require('../images/banner-image-3.png')} alt="" />
+                <img className="banner-img" src={require('../images/banner-image-3.png')} alt="" />
                 <h4 className="center" style={{ fontWeight:'700' }}>CANVAS SPLIT IMAGE</h4>
               </div>
               <div className="col-sm-6">
-                <img className="banner-img1" src={require('../images/banner-image-4.png')}alt="" />
+                <img className="banner-img" src={require('../images/banner-image-4.png')}alt="" />
                 <h4 className="center">Floating Frame Canvas</h4>
               </div>
               <div className="col-sm-6">
-                <img className="banner-img2" src={require('../images/banner-image-5.png')} alt="" />
+                <img className="banner-img" src={require('../images/banner-image-5.png')} alt="" />
                 <h4 className="center">Large Canvas Print</h4>
               </div>
               <div className="col-sm-12">
-                <img className="banner-img3" src={require('../images/Clip.png')} alt="" />
+                <img className="banner-img" src={require('../images/Clip.png')} alt="" />
                 <h4 className="center">Acrylic Premium Prints</h4>
               </div>
             </div>
